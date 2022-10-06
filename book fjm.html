@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour and Travel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!--navbar-->
+    <div class="navbar">
+      <img src="img/Travelpedia-logo_black1.png" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="book.html">Book</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Log in</a></li>
+      </ul>
+      <div class="kotak-cari">
+        <input
+          class="txt-cari"
+          id="search"
+          type="search"
+          placeholder="Ketik untuk mencari"
+          onchange="openPage() "
+        />
+        <a class="tombol-cari" href="#"><i class="fa fa-search"></i></a>
+      </div>
+      <h5>Dark Mode</h5>
+      <div class="mode">
+        <input type="checkbox" id="check" />
+        <div class="bulat"></div>
+      </div>
+      <i class="fa fa-angle-double-right"></i>
+    </div>
+
+    <!---book-->
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+        <span class="space"> </span>
+        <span>N</span>
+        <span>O</span>
+        <span>W</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="img/book1.webp" />
+        </div>
+
+        <form action="">
+          <div class="inputbox">
+            <h3>Where To</h3>
+            <input type="text" placeholder="place name" />
+          </div>
+          <div class="inputbox">
+            <h3>How Many</h3>
+            <input type="number" placeholder="number of guets" />
+          </div>
+          <div class="inputbox">
+            <h3>Arrivals</h3>
+            <input type="date" />
+          </div>
+          <div class="inputbox">
+            <h3>Leaving</h3>
+            <input type="date" />
+          </div>
+          <input type="submit" class="btn" value="Book Now" />
+        </form>
+      </div>
+    </section>
+
+    <div class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At quam
+        laudantium molestias perferendis numquam fugit? <br />Lorem ipsum dolor
+        sit amet consectetur.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Travelpedia</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
